@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.hero {
+    height: 90vh;
+    background:linear-gradient(to bottom, transparent ,black),url("https://image.cnbcfm.com/api/v1/image/104768589-movies-anywhere.JPG?v=1507816437&w=1260&h=709&ffmt=webp&vtcrop=y") 
+    center/cover no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    filter: brightness(50%);
+}
+.hero .hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.hero .title{
+    font-size: 3rem;
+    
+}
+.hero .sub-title{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.hero .btn{
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.3rem;
+}
+.hero .btn:hover{
+    background-color: #f60612;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+
+}
+.content .content-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content-item.reverse{
+    flex-direction: row-reverse;
+}
+.faq{
+    padding: 40px 20px;
+    
+}
+.faq .faq-title{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+.accordion{
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+.accordion-item{
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: left;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.accordion-item h3{
+    font-size: 1.5rem;
+   margin: 0;
+}
+.accordion-item p{
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #bbb;
+}
+.accordion-answer{
+    display: none;
+}
+.accordion-answer.active{
+    display: block;
+}
