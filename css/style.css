@@ -60,6 +60,14 @@ body {
     align-items: center;
 
 }
+.content-item .text {
+    max-width: 50% ;
+    text-align: center;
+}
+.image{
+    max-width: 600px;
+    border-radius: 10px;
+}
 .content-item.reverse{
     flex-direction: row-reverse;
 }
@@ -100,4 +108,11 @@ body {
 }
 .accordion-answer.active{
     display: block;
+}
+
+@media (max-width:768px){
+    .content-item, .content-item.reverse{
+        flex-direction: column;
+        gap: 20px;
+    }
 }

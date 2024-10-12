@@ -32,8 +32,14 @@ const faqs = [
             `;
 
             accordion.appendChild(accordionItem);
-            const accordionAnswer = accordionItem.querySelector(".accordion-answer");
+         
+       
+
         accordionItem.addEventListener("click",() =>{ 
-            accordionAnswer.classList.toggle("active")
+            const accordionsAnswers = document.querySelectorAll(".accordion-answer");
+            accordionsAnswers.forEach(answer =>{
+                answer.classList.remove("active");
+            })
+            accordionItem.querySelector(".accordion-answer").classList.add("active")
         })
   })
